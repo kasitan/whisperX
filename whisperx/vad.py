@@ -12,6 +12,7 @@ from pyannote.audio.pipelines import VoiceActivityDetection
 from pyannote.audio.pipelines.utils import PipelineModel
 from pyannote.core import Annotation, Segment, SlidingWindowFeature
 from tqdm import tqdm
+from beeprint import pp
 
 from .diarize import Segment as SegmentX
 
@@ -128,8 +129,11 @@ class Binarize:
         """
 
         num_frames, num_classes = scores.data.shape
+        print('len = ' + scores.data.shape)
+        print(scores.data)
         frames = scores.sliding_window
         timestamps = [frames[i].middle for i in range(num_frames)]
+        print(timestamps
 
         # annotation meant to store 'active' regions
         active = Annotation()
