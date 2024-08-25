@@ -129,11 +129,11 @@ class Binarize:
         """
 
         num_frames, num_classes = scores.data.shape
-        print(scores.data.shape)
-        print(scores.data)
+        pp(scores.data.shape)
+        pp(scores.data)
         frames = scores.sliding_window
         timestamps = [frames[i].middle for i in range(num_frames)]
-        print(timestamps)
+        pp(timestamps)
 
         # annotation meant to store 'active' regions
         active = Annotation()
