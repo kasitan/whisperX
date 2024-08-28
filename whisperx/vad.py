@@ -133,9 +133,9 @@ class Binarize:
         frames = scores.sliding_window
         timestamps = [frames[i].middle for i in range(num_frames)]
 
-        with open('/kaggle/working/your_file.txt', 'w') as f:
-            for line in zip(timestamps, scores.data.T[0]):
-                f.write(f"{line[0]}:{line[1]}\n")
+        #with open('/kaggle/working/your_file.txt', 'w') as f:
+        #    for line in zip(timestamps, scores.data.T[0]):
+        #        f.write(f"{line[0]}:{line[1]}\n")
         
         
 
