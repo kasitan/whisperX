@@ -12,7 +12,7 @@ from pyannote.audio.pipelines import VoiceActivityDetection
 from pyannote.audio.pipelines.utils import PipelineModel
 from pyannote.core import Annotation, Segment, SlidingWindowFeature
 from tqdm import tqdm
-from beeprint import pp
+#from beeprint import pp
 
 from .diarize import Segment as SegmentX
 
