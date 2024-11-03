@@ -13,7 +13,7 @@ from .audio import N_SAMPLES, SAMPLE_RATE, load_audio, log_mel_spectrogram
 from .vad import load_vad_model, merge_chunks
 from .types import TranscriptionResult, SingleSegment
 
-from beeprint import pp
+#from beeprint import pp
 
 
 def find_numeral_symbol_tokens(tokenizer):
